@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="water-drop_15771695.png">
+  <title>Panel de Usuario - SWSA-ZN</title>
+  <link rel="stylesheet" href="styleUsu.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Agua 💧</h1>
+    <h2>Panel de Usuario - Zangarro Nuevo Guanajuato</h2>
+    <button id="logout-btn">Cerrar sesión</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#consumo-general">Consumo General</a></li>
+      <li><a href="#historial-recibos">Historial de Recibos</a></li>
+      <li><a href="#consumo-zona">Consumo por Zona</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="consumo-general">
+      <h3>Consumo General de Energía</h3>
+      <p>Aquí se mostrará el consumo total de energía de la bomba de agua para toda la comunidad y por mes.</p>
+      <div class="data-box">Consumo actual: <strong>1200 kWh</strong></div>
+    </section>
+
+    <section id="historial-recibos">
+      <h3>Historial de Recibos</h3>
+      <p>Consulta tus recibos anteriores emitidos por el sistema.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Monto</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Octubre 2025</td>
+            <td>$250 MXN</td>
+            <td>Pagado</td>
+          </tr>
+          <tr>
+            <td>Noviembre 2025</td>
+            <td>$270 MXN</td>
+            <td>Pendiente</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="consumo-zona">
+      <h3>Consumo por Zona</h3>
+      <p>Visualiza el consumo de tu cuadra o zona registrada.</p>
+      <div class="data-box">Zona registrada: <strong>Zona 3</strong></div>
+      <div class="data-box">Consumo mensual: <strong>300 kWh</strong></div>
+    </section>
+
+    <section id="contacto">
+      <h3>Datos de la Organización</h3>
+      <p>Para aclaraciones o dudas, comunícate con el comité de agua:</p>
+      <ul>
+        <li>Teléfono: 462-484-6830</li>
+        <li>Email: jc.gonzalez.gio1@gmail.com</li>
+        <li>Dirección: Calle Principal #45, Zangarro Nuevo, Guanajuato</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sistema de Control de Agua Zangarro Nuevo</p>
+  </footer>
+
+  <script src="scriptUsu.js"></script>
+</body>
+</html>

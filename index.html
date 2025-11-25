@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="water-drop_15771695.png">
+  <title>Zangarro Nuevo / Servicio de Agua</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="image-slider">
+        <img src="df541eaf-81c0-4928-90ab-206b54273962.jpg" alt="Imagen 1">
+        <img src="fc5d81b3-f941-446b-bfed-cfb38ccd15e5.jpg" alt="Imagen 2">
+        <img src="0023e75d-253c-4142-b946-b4631cf01c0d.jpg" alt="Imagen 3">
+        <img src="f5e52779-df8d-452c-949b-ba42f4aea81a.jpg" alt="Imagen 4">
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="form-wrapper">
+        <h1 class="welcome-title">Zangarro Nuevo Guanajuato Bienvenido<br>Sistema de control de agua</h1>
+        <h2 class="login-title">Inicie sesión</h2>
+
+        <form id="login-form">
+          <label for="user-type">Tipo de usuario:</label>
+          <select id="user-type" name="user-type" required>
+            <option value="">Seleccione</option>
+            <option value="usuario">Usuario (Familia)</option>
+            <option value="admin">Administrador (Cobrador)</option>
+          </select>
+
+          <label for="username">Nombre:</label>
+          <input type="text" id="username" name="username" placeholder="Nombre de familia o cobrador" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <button type="button" id="register-btn" class="btn btn-secondary">Registrarse</button>
+          </div>
+
+          <div id="feedback" class="message hidden" aria-live="polite"></div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

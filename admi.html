@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="water-drop_15771695.png">
+  <title>Panel de Administrador - SWSA-ZN</title>
+  <link rel="stylesheet" href="styleadmi.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Agua 💧</h1>
+    <h2>Panel de Administrador - Zangarro Nuevo Guanajuato</h2>
+    <button id="logout-btn">Cerrar sesión</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#form-section">Ingresar Familia</a></li>
+      <li><a href="#list-section">Lista de Familias</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="left-panel">
+      <section id="form-section" class="hidden">
+        <h3>Registrar Nueva Familia</h3>
+        <form id="family-form">
+          <label for="family-name">Nombre de familia:</label>
+          <input type="text" id="family-name" required>
+
+          <label for="family-phone">Teléfono:</label>
+          <input type="text" id="family-phone" required>
+
+          <label for="family-street">Calle:</label>
+          <input type="text" id="family-street" required>
+
+          <label for="family-zone">Zona / Cuadra:</label>
+          <select id="family-zone" required>
+            <option value="">Seleccione</option>
+            <option value="1">Zona 1</option>
+            <option value="2">Zona 2</option>
+            <option value="3">Zona 3</option>
+            <option value="4">Zona 4</option>
+          </select>
+
+          <label for="family-admin">Cobrador:</label>
+          <input type="text" id="family-admin" required>
+
+          <button type="submit">Guardar Familia</button>
+        </form>
+      </section>
+
+      <section id="list-section" class="hidden">
+        <h3>Familias Registradas</h3>
+
+        <div class="filters">
+          <button id="filter-zone-1">Zona 1</button>
+          <button id="filter-zone-2">Zona 2</button>
+          <button id="filter-zone-3">Zona 3</button>
+          <button id="filter-zone-4">Zona 4</button>
+          <button id="filter-clear">Quitar Filtro</button>
+          <button id="filter-debt">Adeudos (no disponible)</button>
+        </div>
+
+        <input type="text" id="search-box" placeholder="Buscar por nombre...">
+
+        <table id="families-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Teléfono</th>
+              <th>Calle</th>
+              <th>Zona</th>
+              <th>Cobrador</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <div class="map-container">
+      <h3 id="map-title">Zangarro Nuevo</h3>
+      <div class="map-images">
+        <img src="c5295add-b63a-4110-b1e7-632e1f847b66.jpg" alt="Mapa General" id="map-general" class="active">
+        <img src="Imagen1.png" alt="Mapa Zona 1" id="map-zone1">
+        <img src="Imagen2.png" alt="Mapa Zona 2" id="map-zone2">
+        <img src="Imagen3.png" alt="Mapa Zona 3" id="map-zone3">
+        <img src="Imagen4.png" alt="Mapa Zona 4" id="map-zone4">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sistema de Control de Agua Zangarro Nuevo</p>
+  </footer>
+
+  <script src="scriptadmi.js"></script>
+</body>
+</html>
+
